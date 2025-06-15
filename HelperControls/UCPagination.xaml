@@ -5,9 +5,46 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:HelperControls"
              mc:Ignorable="d"
-             d:DesignHeight="500" d:DesignWidth="800">
-    <Grid>
+             d:DesignHeight="50" d:DesignWidth="700">
+    <StackPanel VerticalAlignment="Center">
+        <Grid>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Margin="10, 0, 0, 0">
+                <TextBlock Text="Display Items:"
+                           Margin="0, 0, 10, 0" />
+                <TextBox Text="15" Width="40"
+                         HorizontalContentAlignment="Center" />
+            </StackPanel>
 
-    </Grid>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Margin="0,0,10,0">
+
+                <TextBlock Text="Page"
+                           Margin="0, 0, 10, 0" />
+                <TextBlock Text="1" Foreground="Blue" />
+                <TextBlock Text="of"
+                           Margin="10, 0" />
+                <TextBlock Text="50" Width="5, 0"
+                           Foreground="Blue" />
+                <TextBlock Text="|" Margin="5, 0"></TextBlock>
+                <TextBlock Text="Go to: " Margin="5, 0"></TextBlock>
+
+                <TextBox Text="15" Width="40"
+                         HorizontalContentAlignment="Center" />
+
+                <TextBlock Text="|" Margin="5, 0"></TextBlock>
+                <TextBlock Margin="10, 0">
+                    <Hyperlink>Previous</Hyperlink>
+                </TextBlock>
+
+                <TextBlock>
+                    <Hyperlink>Next</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
 </UserControl>
-
